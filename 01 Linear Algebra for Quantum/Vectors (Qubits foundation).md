@@ -1,4 +1,4 @@
-
+#### Topics 
 * Column vectors
 * Complex numbers
 * Norm (length)
