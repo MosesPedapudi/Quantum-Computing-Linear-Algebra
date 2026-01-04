@@ -6,10 +6,10 @@
 * Inner product (dot product)
 
 📌 Quantum mapping:
-
+```
 |0⟩ = [1, 0]
 |1⟩ = [0, 1]
-
+```
 * Superposition = linear combination
 
 Python focus
