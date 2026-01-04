@@ -252,30 +252,6 @@ This will look **very strong** to recruiters and researchers.
 ❌ Memorizing Dirac notation without math
 ❌ Watching too many videos without coding
 
-✅ Your plan avoids all of these — good sign.
+✅ This plan avoids all of these — good sign.
 
 ---
-
-## Final Strategic Advice (as a mentor)
-
-Vijay, given:
-
-* Your math background
-* ML mindset
-* Habit of structured learning
-* Desire to build long-term understanding
-
-👉 This path can take you from **zero to research-level quantum computing understanding** in **6–9 months**, if done consistently.
-
----
-
-### Next step (I recommend this strongly)
-
-If you want, next I can:
-
-1. Design a **week-by-week timetable**
-2. Create your **first notebook: “Vectors as Qubits”**
-3. Review your GitHub README
-4. Recommend **1 book + 1 course only** (no overload)
-
-
