@@ -1,195 +1,58 @@
-### ✅ Quantum Computing RoadMap 
+Quantum Computing from Linear Algebra (with Python)
+📌 Overview
 
-👉 **Interleave learning**:
+This repository documents my structured learning journey into Quantum Computing, starting from Linear Algebra fundamentals and building concepts using Python implementations.
 
-> Learn **just enough linear algebra → immediately apply it to a quantum concept**
+The core idea behind this repository is simple:
 
-This is exactly how strong quantum researchers learn.
+Quantum Computing is fundamentally Linear Algebra applied with probabilistic rules.
 
----
+Instead of learning quantum computing as a collection of formulas or tools, this repository focuses on:
 
-## 2. The right mental model (very important)
+Building strong mathematical intuition
 
-Think of quantum computing as:
+Implementing every concept using NumPy
 
-> **Linear algebra with strange rules on probability and measurement**
+Gradually mapping linear algebra concepts to quantum principles
 
-No heavy physics at the beginning.
+Creating a long-term reference for revision and deeper understanding
 
-### Core objects in quantum computing
+🎯 Learning Philosophy
 
-| Concept            | Linear Algebra Equivalent  |
-| ------------------ | -------------------------- |
-| Qubit              | Vector                     |
-| Quantum state      | Complex vector             |
-| Quantum gate       | Matrix                     |
-| Applying gate      | Matrix × Vector            |
-| Measurement        | Projection + probability   |
-| Multi-qubit system | Tensor (Kronecker) product |
+Most quantum computing resources either:
 
-If you master this mapping → quantum computing becomes logical, not mystical.
+Assume advanced physics knowledge, or
 
----
+Jump directly into quantum frameworks (Qiskit, Cirq) without strong fundamentals
 
-## 3. Strategic Learning Roadmap (Phase-wise)
+This repository follows a bottom-up approach:
 
-### **Phase 0 – Setup (1 day)**
+Learn only the required linear algebra
 
-Before learning anything:
+Implement concepts using Python
 
-* Create GitHub repo:
-  **`quantum-computing-from-linear-algebra`**
-* Setup:
+Immediately connect them to quantum computing ideas
 
-  * Python
-  * NumPy
-  * Jupyter Notebook
+Delay frameworks until concepts are crystal clear
 
----
+This ensures:
 
-### **Phase 1 – Linear Algebra for Quantum (2–3 weeks)**
+No memorization without understanding
 
-⚠️ Not “full linear algebra”, only **quantum-relevant** parts.
+Concepts stay intuitive even at advanced levels
 
-#### 1️⃣ Vectors (Qubits foundation)
+Strong foundation for algorithms, circuits, and research
 
-Learn + code:
-
-* Column vectors
-* Complex numbers
-* Norm (length)
-* Normalization
-* Inner product (dot product)
-
-📌 Quantum mapping:
-
-* |0⟩ = `[1, 0]`
-* |1⟩ = `[0, 1]`
-* Superposition = linear combination
-
-**Python focus**
-
-```python
-import numpy as np
-
-zero = np.array([[1], [0]])
-one = np.array([[0], [1]])
-```
-
----
-
-#### 2️⃣ Matrices (Quantum gates)
-
-Learn:
-
-* Matrix multiplication
-* Identity matrix
-* Transpose
-* Conjugate transpose (Hermitian)
-* Unitary matrices (VERY important)
-
-📌 Quantum mapping:
-
-* Gates = unitary matrices
-* Applying gate = matrix × state
-
-Example:
-
-```python
-H = (1/np.sqrt(2)) * np.array([[1, 1],
-                               [1, -1]])
-```
-
----
-
-#### 3️⃣ Eigenvalues & Eigenvectors (measurement logic)
-
-Learn:
-
-* Eigenvalues
-* Eigenvectors
-* Spectral decomposition
-
-📌 Quantum meaning:
-
-* Measurement outcomes = eigenvalues
-* State collapses to eigenvector
-
----
-
-#### 4️⃣ Tensor (Kronecker) product (multi-qubit systems)
-
-This is **the most important math topic in quantum computing**.
-
-Learn:
-
-* Kronecker product
-* Dimensional explosion
-* Basis ordering
-
-Example:
-
-```python
-np.kron(zero, one)  # |01⟩
-```
-
----
-
-### **Phase 2 – Quantum Concepts via Linear Algebra (3–4 weeks)**
-
-Now start **quantum computing properly**, but math will feel natural.
-
-#### 1️⃣ Qubits & Bloch sphere (intuition)
-
-* State vector
-* Probability amplitudes
-* Global phase vs relative phase
-
-#### 2️⃣ Quantum gates
-
-* Pauli X, Y, Z
-* Hadamard
-* Phase gate
-* CNOT
-
-All as **matrices only**.
-
----
-
-#### 3️⃣ Measurement
-
-* Projection operators
-* Probability calculation
-* State collapse
-
----
-
-#### 4️⃣ Entanglement
-
-* Bell states
-* Why tensor product ≠ normal multiplication
-* Why entanglement is *non-classical*
-
----
-
-### **Phase 3 – Quantum Circuits & Simulation (2–3 weeks)**
-
-Only now introduce:
-
-* Qiskit (IBM)
-* Circuit diagrams
-* Simulators
-
-⚠️ Don’t rush Qiskit.
-First understand **what the simulator is doing mathematically**.
-
----
-
-## 4. GitHub Repository Structure (Very Important)
-
-Here’s a **clean, professional structure**:
-
-```
+🧠 Conceptual Mapping
+Quantum Concept	Linear Algebra Interpretation
+Qubit	Vector
+Quantum State	Normalized complex vector
+Quantum Gate	Unitary matrix
+Applying a Gate	Matrix × Vector
+Measurement	Projection + probability
+Multi-Qubit System	Tensor (Kronecker) product
+Entanglement	Non-separable tensor states
+🗂 Repository Structure
 quantum-computing-from-linear-algebra/
 │
 ├── 00_setup/
@@ -216,42 +79,87 @@ quantum-computing-from-linear-algebra/
 │   ├── entanglement.ipynb
 │   └── measurement.ipynb
 │
-├── README.md
-```
+└── README.md
 
-### README should clearly say:
+🧪 Tools & Technologies
 
-* Why this repo exists
-* Learning strategy
-* How linear algebra maps to quantum computing
+Python 3
 
-This will look **very strong** to recruiters and researchers.
+NumPy – Linear algebra operations
 
----
+Jupyter Notebook – Interactive learning & experimentation
 
-## 5. Python Tools – What to Use & Avoid
+Matplotlib – Visualization (where required)
 
-### ✅ Use
+Quantum frameworks (Qiskit, Cirq) will be introduced only after mathematical foundations are solid.
 
-* NumPy (mandatory)
-* Matplotlib (for visualization)
-* Jupyter Notebook
+🚀 Learning Roadmap
+Phase 1: Linear Algebra for Quantum Computing
 
-### ❌ Avoid initially
+Vectors and complex numbers
 
-* Qiskit (too early)
-* Quantum hardware APIs
-* Heavy physics simulators
+Norms and normalization
 
----
+Inner products
 
-## 6. Common Mistakes (please avoid)
+Matrix operations
 
-❌ Learning quantum “formulas” without understanding vectors
-❌ Jumping directly to Qiskit circuits
-❌ Memorizing Dirac notation without math
-❌ Watching too many videos without coding
+Unitary matrices
 
-✅ This plan avoids all of these — good sign.
+Eigenvalues and eigenvectors
 
----
+Tensor (Kronecker) products
+
+Phase 2: Core Quantum Concepts
+
+Qubits and superposition
+
+Quantum gates
+
+Measurement theory
+
+Multi-qubit systems
+
+Entanglement
+
+Phase 3: Quantum Circuits & Simulation
+
+Mapping math to circuits
+
+Quantum circuit intuition
+
+Introduction to simulators
+
+📖 How to Use This Repository
+
+Read notebooks sequentially
+
+Execute and modify code to build intuition
+
+Revisit notebooks while learning advanced quantum topics
+
+Use this repository as a personal reference guide
+
+🧩 Intended Outcome
+
+By the end of this journey, I aim to:
+
+Understand quantum computing from first principles
+
+Confidently explain quantum concepts using linear algebra
+
+Transition smoothly into quantum algorithms and simulators
+
+Maintain a reusable and expandable knowledge base
+
+📌 Note
+
+This repository emphasizes understanding over speed.
+Progress is intentional, structured, and cumulative.
+
+🤝 Contributions
+
+This is a personal learning repository.
+Suggestions, discussions, and constructive feedback are always welcome.
+
+⭐ If you find this repository useful, feel free to star it
