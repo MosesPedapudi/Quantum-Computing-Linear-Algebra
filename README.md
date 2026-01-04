@@ -1,58 +1,61 @@
-Quantum Computing from Linear Algebra (with Python)
-📌 Overview
+# Quantum Computing from Linear Algebra (with Python)
 
-This repository documents my structured learning journey into Quantum Computing, starting from Linear Algebra fundamentals and building concepts using Python implementations.
+## 📌 Overview
+
+This repository documents my structured learning journey into **Quantum Computing**, starting from **Linear Algebra fundamentals** and building concepts using **Python implementations**.
 
 The core idea behind this repository is simple:
 
-Quantum Computing is fundamentally Linear Algebra applied with probabilistic rules.
+> **Quantum Computing is fundamentally Linear Algebra applied with probabilistic rules.**
 
 Instead of learning quantum computing as a collection of formulas or tools, this repository focuses on:
 
-Building strong mathematical intuition
+* Building **strong mathematical intuition**
+* Implementing every concept using **NumPy**
+* Gradually mapping linear algebra concepts to **quantum principles**
+* Creating a **long-term reference** for revision and deeper understanding
 
-Implementing every concept using NumPy
+---
 
-Gradually mapping linear algebra concepts to quantum principles
-
-Creating a long-term reference for revision and deeper understanding
-
-🎯 Learning Philosophy
+## 🎯 Learning Philosophy
 
 Most quantum computing resources either:
 
-Assume advanced physics knowledge, or
+* Assume advanced physics knowledge, or
+* Jump directly into quantum frameworks (Qiskit, Cirq) without strong fundamentals
 
-Jump directly into quantum frameworks (Qiskit, Cirq) without strong fundamentals
+This repository follows a **bottom-up approach**:
 
-This repository follows a bottom-up approach:
-
-Learn only the required linear algebra
-
-Implement concepts using Python
-
-Immediately connect them to quantum computing ideas
-
-Delay frameworks until concepts are crystal clear
+1. Learn **only the required linear algebra**
+2. Implement concepts using **Python**
+3. Immediately connect them to **quantum computing ideas**
+4. Delay frameworks until concepts are crystal clear
 
 This ensures:
 
-No memorization without understanding
+* No memorization without understanding
+* Concepts stay intuitive even at advanced levels
+* Strong foundation for algorithms, circuits, and research
 
-Concepts stay intuitive even at advanced levels
+---
 
-Strong foundation for algorithms, circuits, and research
+## 🧠 Conceptual Mapping
 
-🧠 Conceptual Mapping
-Quantum Concept	Linear Algebra Interpretation
-Qubit	Vector
-Quantum State	Normalized complex vector
-Quantum Gate	Unitary matrix
-Applying a Gate	Matrix × Vector
-Measurement	Projection + probability
-Multi-Qubit System	Tensor (Kronecker) product
-Entanglement	Non-separable tensor states
-🗂 Repository Structure
+| Quantum Concept    | Linear Algebra Interpretation |
+| ------------------ | ----------------------------- |
+| Qubit              | Vector                        |
+| Quantum State      | Normalized complex vector     |
+| Quantum Gate       | Unitary matrix                |
+| Applying a Gate    | Matrix × Vector               |
+| Measurement        | Projection + probability      |
+| Multi-Qubit System | Tensor (Kronecker) product    |
+| Entanglement       | Non-separable tensor states   |
+
+---
+
+## 🗂 Repository Structure
+
+```
 quantum-computing-from-linear-algebra/
 │
 ├── 00_setup/
@@ -80,86 +83,83 @@ quantum-computing-from-linear-algebra/
 │   └── measurement.ipynb
 │
 └── README.md
+```
 
-🧪 Tools & Technologies
+---
 
-Python 3
+## 🧪 Tools & Technologies
 
-NumPy – Linear algebra operations
+* **Python 3**
+* **NumPy** – Linear algebra operations
+* **Jupyter Notebook** – Interactive learning & experimentation
+* **Matplotlib** – Visualization (where required)
 
-Jupyter Notebook – Interactive learning & experimentation
+> Quantum frameworks (Qiskit, Cirq) will be introduced only after mathematical foundations are solid.
 
-Matplotlib – Visualization (where required)
+---
 
-Quantum frameworks (Qiskit, Cirq) will be introduced only after mathematical foundations are solid.
+## 🚀 Learning Roadmap
 
-🚀 Learning Roadmap
-Phase 1: Linear Algebra for Quantum Computing
+### Phase 1: Linear Algebra for Quantum Computing
 
-Vectors and complex numbers
+* Vectors and complex numbers
+* Norms and normalization
+* Inner products
+* Matrix operations
+* Unitary matrices
+* Eigenvalues and eigenvectors
+* Tensor (Kronecker) products
 
-Norms and normalization
+### Phase 2: Core Quantum Concepts
 
-Inner products
+* Qubits and superposition
+* Quantum gates
+* Measurement theory
+* Multi-qubit systems
+* Entanglement
 
-Matrix operations
+### Phase 3: Quantum Circuits & Simulation
 
-Unitary matrices
+* Mapping math to circuits
+* Quantum circuit intuition
+* Introduction to simulators
 
-Eigenvalues and eigenvectors
+---
 
-Tensor (Kronecker) products
+## 📖 How to Use This Repository
 
-Phase 2: Core Quantum Concepts
+* Read notebooks **sequentially**
+* Execute and modify code to build intuition
+* Revisit notebooks while learning advanced quantum topics
+* Use this repository as a **personal reference guide**
 
-Qubits and superposition
+---
 
-Quantum gates
-
-Measurement theory
-
-Multi-qubit systems
-
-Entanglement
-
-Phase 3: Quantum Circuits & Simulation
-
-Mapping math to circuits
-
-Quantum circuit intuition
-
-Introduction to simulators
-
-📖 How to Use This Repository
-
-Read notebooks sequentially
-
-Execute and modify code to build intuition
-
-Revisit notebooks while learning advanced quantum topics
-
-Use this repository as a personal reference guide
-
-🧩 Intended Outcome
+## 🧩 Intended Outcome
 
 By the end of this journey, I aim to:
 
-Understand quantum computing from first principles
+* Understand quantum computing from **first principles**
+* Confidently explain quantum concepts using linear algebra
+* Transition smoothly into quantum algorithms and simulators
+* Maintain a reusable and expandable knowledge base
 
-Confidently explain quantum concepts using linear algebra
+---
 
-Transition smoothly into quantum algorithms and simulators
+## 📌 Note
 
-Maintain a reusable and expandable knowledge base
-
-📌 Note
-
-This repository emphasizes understanding over speed.
+This repository emphasizes **understanding over speed**.
 Progress is intentional, structured, and cumulative.
 
-🤝 Contributions
+---
+
+## 🤝 Contributions
 
 This is a personal learning repository.
 Suggestions, discussions, and constructive feedback are always welcome.
 
-⭐ If you find this repository useful, feel free to star it
+---
+
+### ⭐ If you find this repository useful, feel free to star it
+
+---
